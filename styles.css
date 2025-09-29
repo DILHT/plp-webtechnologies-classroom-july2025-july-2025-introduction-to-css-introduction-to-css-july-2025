@@ -1,5 +1,7 @@
+/* Apply border-box sizing to all elements */
 *{box-sizing: border-box;}
 
+/* Body styles: font, background, layout */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -7,32 +9,35 @@ body {
     background-color: #f4f4f4;
     display: flex;
     flex-direction: column;
-    
 }
 
+/* Span elements: red text */
 span{
     color: red;
 }
 
+/* Ensure full height for html and body */
 html, body{
     height: 100%;
 }
 
+/* Center h1 and main content */
 h1, main{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+/* Main takes remaining space */
 main{
     flex: 1;
 }
 
+/* Product card styles: box model, shadow, border */
 .product-card{
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 5px;
-    
     padding:0 0 0 0;
     margin: 20px;
     width: 300px;
@@ -41,17 +46,18 @@ main{
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
+/* Card description padding */
 .card-description{
     padding: 5px 20px 20px 20px;
 }
 
+/* Navigation bar: evenly spaced links */
 nav{
     display: flex;
     justify-content: space-evenly;
 }
 
-
-
+/* Link styles */
 a{
     text-decoration: none;
 }
@@ -59,14 +65,15 @@ a:hover{
     color: green;
 }
 
+/* Image styles: responsive and rounded corners */
 img{
     max-width: 100%;
     padding-top: 0;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    
 }
 
+/* Button styles */
 .btn{
     background-color: rgb(28, 28, 213);
     color:#fff;
@@ -74,22 +81,24 @@ img{
     width: 8rem;
     border: none;
     cursor: pointer;
-    
-
 }
 
+/* Paragraph class: blue text */
 .p{
     color:blue;
 }
+
+/* Button hover effect */
 .btn:hover{
     background-color:green;
 }
 
+/* Footer styles: centered text */
 footer{
-        text-align: center;
-
+    text-align: center;
 }
 
+/* Header and footer: background, padding, border */
 header, footer {
     background-color: #eaeaea;
     padding: 15px;
